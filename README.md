@@ -27,8 +27,8 @@ A ideia do “prod local” é subir **API + DB em containers**, simulando o com
 ## Subir o ambiente “prod local”
 
 -- Na raiz do projeto
-docker compose down
-docker compose --profile prod up -d --build
+- docker compose down
+- docker compose --profile prod up -d --build
 
 -- A API estará disponível em: http://localhost:3000
 
@@ -36,6 +36,6 @@ docker compose --profile prod up -d --build
 ## Modo desenvolvimento
 
 -- Na raiz do projeto
-docker compose up -d db
-npm run start:dev
+- docker compose up -d db
+- npm run start:dev
 
